@@ -15,5 +15,5 @@ dependencies {
 dependencies {
     compile "com.opencsv:opencsv:4.0"
     compile 'com.google.code.gson:gson:2.2.+'
-    compile(files("./lib/CensusAnalyserSecond1.jar"))
+    compile(files("./lib/CensusAnalyserSecond.jar"))
 }

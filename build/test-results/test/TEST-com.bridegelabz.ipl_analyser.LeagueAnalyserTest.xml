@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-12T16:34:58" hostname="LAPTOP-CKOAUDG5" time="0.636">
+  <properties/>
+  <testcase name="giv" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.636"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
