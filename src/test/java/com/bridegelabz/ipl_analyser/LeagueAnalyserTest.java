@@ -138,25 +138,37 @@ public class LeagueAnalyserTest {
     @Test
     public void givenFile_SortWithRespectBowlerBestEconomy_ReturnHighestPlayerName() {
         try {
-        LeagueAnalyser leagueAnalyser = new LeagueAnalyser();
-        leagueAnalyser.loadData(LeagueAnalyser.Player.WKTS, WKTS_SHEET);
-        String sortedData = leagueAnalyser.sortData("BOWLING_ECO");
-        LeagueWktsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueWktsCSV[].class);
-        Assert.assertEquals("Mayank Markande", leagueRunsCSVS[0].name);
-    } catch (LeagueAnalyserException e) {
-        Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
-    }
+            LeagueAnalyser leagueAnalyser = new LeagueAnalyser();
+            leagueAnalyser.loadData(LeagueAnalyser.Player.WKTS, WKTS_SHEET);
+            String sortedData = leagueAnalyser.sortData("BOWLING_ECO");
+            LeagueWktsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueWktsCSV[].class);
+            Assert.assertEquals("Mayank Markande", leagueRunsCSVS[0].name);
+        } catch (LeagueAnalyserException e) {
+            Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
+        }
     }
     @Test
     public void givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName() {
         try {
+            LeagueAnalyser leagueAnalyser = new LeagueAnalyser();
+            leagueAnalyser.loadData(LeagueAnalyser.Player.WKTS, WKTS_SHEET);
+            String sortedData = leagueAnalyser.sortData("BOWLING_SR_4W_5W");
+            LeagueWktsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueWktsCSV[].class);
+            Assert.assertEquals("Lasith Malinga", leagueRunsCSVS[0].name);
+        } catch (LeagueAnalyserException e) {
+            Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
+        }
+    }
+    @Test
+    public void givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName() {
+        try {
         LeagueAnalyser leagueAnalyser = new LeagueAnalyser();
         leagueAnalyser.loadData(LeagueAnalyser.Player.WKTS, WKTS_SHEET);
-        String sortedData = leagueAnalyser.sortData("BOWLING_SR_4W_5W");
+        String sortedData = leagueAnalyser.sortData("BOWLING_SR_AVG");
         LeagueWktsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueWktsCSV[].class);
-        Assert.assertEquals("Lasith Malinga", leagueRunsCSVS[0].name);
-    } catch (LeagueAnalyserException e) {
-        Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
+        Assert.assertEquals("Prasidh Krishna", leagueRunsCSVS[0].name);
+        } catch (LeagueAnalyserException e) {
+            Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
     }
 }
