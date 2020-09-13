@@ -18,9 +18,10 @@ public class LeagueDAO {
     public String noOfWickets;
     public String bbi;
     public String economy;
-    public String fourWkts;
-    public String fiveWkts;
+    public int fourWkts;
+    public int fiveWkts;
     public String BowlingstrikeRate;
+
 
     public LeagueDAO(LeagueRunsCSV leagueRunsCSV) {
         name = leagueRunsCSV.name;
@@ -75,6 +76,51 @@ public class LeagueDAO {
         noOfFours = leagueRunsCSV.noOfFours;
         noOfSixs = leagueRunsCSV.noOfSixs;
 
+    }
+
+    public String getaverageScore() {
+        return averageScore;
+    }
+
+    public String getStrikeRate() {
+        return strikeRate;
+    }
+
+    public int getNoOfRuns() {
+        return noOfRuns;
+    }
+
+    public int getNoOfFours() {
+        return noOfFours;
+    }
+
+    public String getBowlingaverageScore() {
+        return bowlingAverageScore;
+    }
+
+    public String getEconomy() {
+        return economy;
+    }
+
+    public int getFoursWkts() {
+        return fourWkts;
+    }
+
+    public int getFiveWkts() {
+        return fiveWkts;
+    }
+
+    public String  getBowlingAverageScore() {
+        return bowlingAverageScore;
+    }
+
+
+    public int getNoOfHundreds() {
+        return noOfHundreds;
+    }
+
+    public String getNoOfWickets() {
+        return noOfWickets;
     }
 }
 

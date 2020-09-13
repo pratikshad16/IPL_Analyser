@@ -24,9 +24,9 @@ public class LeagueWktsCSV {
     @CsvBindByName(column = "SR")
     public String BowlingstrikeRate;
     @CsvBindByName(column = "4w")
-    public String foursWkts;
+    public int foursWkts;
     @CsvBindByName(column = "5w")
-    public String fiveWkts;
+    public int fiveWkts;
 
     @Override
     public String toString() {
