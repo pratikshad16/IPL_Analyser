@@ -56,7 +56,7 @@ public class LeagueLoader {
             for(String name1 : map2.keySet()){
                 if (new ArrayList<>(map1.values()).equals(new ArrayList<>(map2.values()))) {
                     if (map1.get(name).noOfHundreds == 0 && map2.get(name1).noOfFifty == 0) {
-                        map.put("i", new LeagueDAO(map1.get(name), map2.get(name1)));
+                        map.put("map1.get(name).name", new LeagueDAO(map1.get(name), map2.get(name1)));
                     }
                 }
             }
