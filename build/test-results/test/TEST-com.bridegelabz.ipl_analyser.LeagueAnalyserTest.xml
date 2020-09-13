@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="18" skipped="0" failures="2" errors="0" timestamp="2020-09-13T19:00:22" hostname="LAPTOP-CKOAUDG5" time="6.521">
+<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="18" skipped="0" failures="2" errors="0" timestamp="2020-09-13T19:15:45" hostname="LAPTOP-CKOAUDG5" time="6.53">
   <properties/>
-  <testcase name="givenFile_SortWithRespectToAllRounder_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="1.051"/>
-  <testcase name="givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.307">
+  <testcase name="givenFile_SortWithRespectToAllRounder_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="1.017"/>
+  <testcase name="givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.296">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
 	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:234)
-	at java.base/java.util.Arrays.sort(Arrays.java:1306)
-	at java.base/java.util.ArrayList.sort(ArrayList.java:1720)
-	at java.base/java.util.Collections.sort(Collections.java:179)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sortData(LeagueAnalyser.java:89)
+	at com.bridgelabz.ipl_analyser.LeagueAnalyser.lambda$sort$32(LeagueAnalyser.java:106)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.accept(ForEachOps.java:204)
+	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
+	at java.base/java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:593)
+	at java.base/java.util.stream.IntPipeline$7$1.accept(IntPipeline.java:317)
+	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
+	at java.base/java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:699)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.evaluateSequential(ForEachOps.java:188)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.IntPipeline.forEachOrdered(IntPipeline.java:444)
+	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sort(LeagueAnalyser.java:103)
+	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sortData(LeagueAnalyser.java:74)
 	at com.bridegelabz.ipl_analyser.LeagueAnalyserTest.givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName(LeagueAnalyserTest.java:166)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -62,21 +71,30 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="givenFile_whenSortWithRespectToSixFourAndStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.31"/>
-  <testcase name="givenFile_SortWithRespectAverageAndMostSixs_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.455"/>
-  <testcase name="givenFile_SortWithRespectBowlingAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.3"/>
-  <testcase name="givenFile_SortWithRespectAverageAndNOCentury_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.536"/>
-  <testcase name="givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.225">
+  <testcase name="givenFile_whenSortWithRespectToSixFourAndStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.283"/>
+  <testcase name="givenFile_SortWithRespectAverageAndMostSixs_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.526"/>
+  <testcase name="givenFile_SortWithRespectBowlingAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.344"/>
+  <testcase name="givenFile_SortWithRespectAverageAndNOCentury_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.586"/>
+  <testcase name="givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.214">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
 	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
 	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:234)
-	at java.base/java.util.Arrays.sort(Arrays.java:1306)
-	at java.base/java.util.ArrayList.sort(ArrayList.java:1720)
-	at java.base/java.util.Collections.sort(Collections.java:179)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sortData(LeagueAnalyser.java:89)
+	at com.bridgelabz.ipl_analyser.LeagueAnalyser.lambda$sort$32(LeagueAnalyser.java:106)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.accept(ForEachOps.java:204)
+	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
+	at java.base/java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:593)
+	at java.base/java.util.stream.IntPipeline$7$1.accept(IntPipeline.java:317)
+	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
+	at java.base/java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:699)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.evaluateSequential(ForEachOps.java:188)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.IntPipeline.forEachOrdered(IntPipeline.java:444)
+	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sort(LeagueAnalyser.java:103)
+	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sortData(LeagueAnalyser.java:74)
 	at com.bridegelabz.ipl_analyser.LeagueAnalyserTest.givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName(LeagueAnalyserTest.java:154)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -127,17 +145,17 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="givenWktsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.294"/>
-  <testcase name="givenFile_whenSortWithRespectToAverage_ReturnHighestBattingAvg" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.339"/>
-  <testcase name="givenRunsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.271"/>
-  <testcase name="givenFile_SortWithRespectBowlingStrikeRates_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.257"/>
-  <testcase name="givenFile_whenSortWithRespectToSixAndFour_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.223"/>
-  <testcase name="givenFile_SortWithRespectBowlerAndBattingAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.614"/>
-  <testcase name="givenFile_whenSortWithRespectAverageAndStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.226"/>
+  <testcase name="givenWktsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.258"/>
+  <testcase name="givenFile_whenSortWithRespectToAverage_ReturnHighestBattingAvg" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.25"/>
+  <testcase name="givenRunsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.285"/>
+  <testcase name="givenFile_SortWithRespectBowlingStrikeRates_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.259"/>
+  <testcase name="givenFile_whenSortWithRespectToSixAndFour_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.253"/>
+  <testcase name="givenFile_SortWithRespectBowlerAndBattingAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.605"/>
+  <testcase name="givenFile_whenSortWithRespectAverageAndStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.289"/>
   <testcase name="givenFile_whenSortWithRespectToStrikeRate_ReturnHighestStrikeRate" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.276"/>
-  <testcase name="givenFile_SortWithRespectAverageAndRuns_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.293"/>
-  <testcase name="givenFile_SortWithRespectBowlerBestEconomy_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.303"/>
-  <testcase name="givenFile_SortWithRespectBowlerWithMaxWktsAndAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.225"/>
+  <testcase name="givenFile_SortWithRespectAverageAndRuns_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.277"/>
+  <testcase name="givenFile_SortWithRespectBowlerBestEconomy_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.25"/>
+  <testcase name="givenFile_SortWithRespectBowlerWithMaxWktsAndAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.245"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

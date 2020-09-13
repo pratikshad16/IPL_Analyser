@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">6.505s</div>
+<div class="counter">6.513s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,12 +76,21 @@
 <pre>java.lang.NullPointerException
 	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
 	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:234)
-	at java.base/java.util.Arrays.sort(Arrays.java:1306)
-	at java.base/java.util.ArrayList.sort(ArrayList.java:1720)
-	at java.base/java.util.Collections.sort(Collections.java:179)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sortData(LeagueAnalyser.java:89)
+	at com.bridgelabz.ipl_analyser.LeagueAnalyser.lambda$sort$32(LeagueAnalyser.java:106)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.accept(ForEachOps.java:204)
+	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
+	at java.base/java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:593)
+	at java.base/java.util.stream.IntPipeline$7$1.accept(IntPipeline.java:317)
+	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
+	at java.base/java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:699)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.evaluateSequential(ForEachOps.java:188)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.IntPipeline.forEachOrdered(IntPipeline.java:444)
+	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sort(LeagueAnalyser.java:103)
+	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sortData(LeagueAnalyser.java:74)
 	at com.bridegelabz.ipl_analyser.LeagueAnalyserTest.givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName(LeagueAnalyserTest.java:166)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -141,12 +150,21 @@
 	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
 	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
 	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:234)
-	at java.base/java.util.Arrays.sort(Arrays.java:1306)
-	at java.base/java.util.ArrayList.sort(ArrayList.java:1720)
-	at java.base/java.util.Collections.sort(Collections.java:179)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sortData(LeagueAnalyser.java:89)
+	at com.bridgelabz.ipl_analyser.LeagueAnalyser.lambda$sort$32(LeagueAnalyser.java:106)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.accept(ForEachOps.java:204)
+	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
+	at java.base/java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:593)
+	at java.base/java.util.stream.IntPipeline$7$1.accept(IntPipeline.java:317)
+	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
+	at java.base/java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:699)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.evaluateSequential(ForEachOps.java:188)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.IntPipeline.forEachOrdered(IntPipeline.java:444)
+	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sort(LeagueAnalyser.java:103)
+	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sortData(LeagueAnalyser.java:74)
 	at com.bridegelabz.ipl_analyser.LeagueAnalyserTest.givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName(LeagueAnalyserTest.java:154)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -211,77 +229,77 @@
 </thead>
 <tr>
 <td class="success">givenFile_SortWithRespectAverageAndMostSixs_ReturnHighestPlayerName</td>
-<td class="success">0.455s</td>
+<td class="success">0.526s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectAverageAndNOCentury_ReturnHighestPlayerName</td>
-<td class="success">0.536s</td>
+<td class="success">0.586s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectAverageAndRuns_ReturnHighestPlayerName</td>
-<td class="success">0.293s</td>
+<td class="success">0.277s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectBowlerAndBattingAverage_ReturnHighestPlayerName</td>
-<td class="success">0.614s</td>
+<td class="success">0.605s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectBowlerBestEconomy_ReturnHighestPlayerName</td>
-<td class="success">0.303s</td>
+<td class="success">0.250s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName</td>
-<td class="failures">0.307s</td>
+<td class="failures">0.296s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName</td>
-<td class="failures">0.225s</td>
+<td class="failures">0.214s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectBowlerWithMaxWktsAndAverage_ReturnHighestPlayerName</td>
-<td class="success">0.225s</td>
+<td class="success">0.245s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectBowlingAverage_ReturnHighestPlayerName</td>
-<td class="success">0.300s</td>
+<td class="success">0.344s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectBowlingStrikeRates_ReturnHighestPlayerName</td>
-<td class="success">0.257s</td>
+<td class="success">0.259s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectToAllRounder_ReturnHighestPlayerName</td>
-<td class="success">1.051s</td>
+<td class="success">1.017s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_whenSortWithRespectAverageAndStrikeRate_ReturnHighestPlayerName</td>
-<td class="success">0.226s</td>
+<td class="success">0.289s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_whenSortWithRespectToAverage_ReturnHighestBattingAvg</td>
-<td class="success">0.339s</td>
+<td class="success">0.250s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_whenSortWithRespectToSixAndFour_ReturnHighestPlayerName</td>
-<td class="success">0.223s</td>
+<td class="success">0.253s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_whenSortWithRespectToSixFourAndStrikeRate_ReturnHighestPlayerName</td>
-<td class="success">0.310s</td>
+<td class="success">0.283s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -291,12 +309,12 @@
 </tr>
 <tr>
 <td class="success">givenRunsFile_whenCheckRecords_shouldReturnCorrectRecords</td>
-<td class="success">0.271s</td>
+<td class="success">0.285s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenWktsFile_whenCheckRecords_shouldReturnCorrectRecords</td>
-<td class="success">0.294s</td>
+<td class="success">0.258s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -309,7 +327,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at 14-Sep-2020, 12:30:28 am</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at 14-Sep-2020, 12:45:52 am</p>
 </div>
 </div>
 </body>
