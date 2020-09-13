@@ -123,4 +123,16 @@ public class LeagueAnalyserTest {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
     }
+    @Test
+    public void givenFile_SortWithRespectBowlingStrikeRates_ReturnHighestPlayerName() {
+        try {
+        LeagueAnalyser leagueAnalyser = new LeagueAnalyser();
+        leagueAnalyser.loadData(LeagueAnalyser.Player.WKTS, WKTS_SHEET);
+        String sortedData = leagueAnalyser.sortData("BOWLING_STRIKE_RATES");
+        LeagueWktsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueWktsCSV[].class);
+        Assert.assertEquals("Alzarri Joseph", leagueRunsCSVS[0].name);
+        } catch (LeagueAnalyserException e) {
+            Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
+        }
+    }
 }

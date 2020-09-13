@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-09-13T11:42:44" hostname="LAPTOP-CKOAUDG5" time="2.993">
+<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-13T13:49:09" hostname="LAPTOP-CKOAUDG5" time="0.928">
   <properties/>
-  <testcase name="givenFile_whenSortWithRespectToSixFourAndStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.734"/>
-  <testcase name="givenFile_SortWithRespectBowlingAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.249"/>
-  <testcase name="givenWktsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.324"/>
-  <testcase name="givenFile_whenSortWithRespectToAverage_ReturnHighestBattingAvg" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.266"/>
-  <testcase name="givenRunsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.369"/>
-  <testcase name="givenFile_whenSortWithRespectToSixAndFour_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.355"/>
-  <testcase name="givenFile_whenSortWithRespectAverageAndStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.227"/>
-  <testcase name="givenFile_whenSortWithRespectToStrikeRate_ReturnHighestStrikeRate" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.208"/>
-  <testcase name="givenFile_SortWithRespectAverageAndRuns_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.249"/>
+  <testcase name="givenFile_SortWithRespectBowlingStrikeRates_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.928"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

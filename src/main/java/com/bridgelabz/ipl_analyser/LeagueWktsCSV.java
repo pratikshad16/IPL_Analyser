@@ -22,7 +22,7 @@ public class LeagueWktsCSV {
     @CsvBindByName(column = "Econ")
     public String economy;
     @CsvBindByName(column = "SR")
-    public String strikeRate;
+    public String BowlingstrikeRate;
     @CsvBindByName(column = "4w")
     public String foursWkts;
     @CsvBindByName(column = "5w")
@@ -40,7 +40,7 @@ public class LeagueWktsCSV {
                 ", bbi='" + bbi + '\'' +
                 ", bowlingAverageScore ='" + bowlingAverageScore + '\'' +
                 ", economy='" + economy + '\'' +
-                ", strikeRate='" + strikeRate + '\'' +
+                ", BowlingstrikeRate='" + BowlingstrikeRate + '\'' +
                 ", foursWkts='" + foursWkts + '\'' +
                 ", fiveWkts='" + fiveWkts + '\'' +
                 '}';

@@ -20,6 +20,7 @@ public class LeagueDAO {
     public String economy;
     public String fourWkts;
     public String fiveWkts;
+    public String BowlingstrikeRate;
 
     public LeagueDAO(LeagueRunsCSV leagueRunsCSV) {
         name = leagueRunsCSV.name;
@@ -47,6 +48,7 @@ public class LeagueDAO {
         fiveWkts = leagueWktsCSV.fiveWkts;
         fourWkts = leagueWktsCSV.foursWkts;
         bowlingAverageScore = leagueWktsCSV.bowlingAverageScore;
+        BowlingstrikeRate = leagueWktsCSV.BowlingstrikeRate;
     }
 }
 
