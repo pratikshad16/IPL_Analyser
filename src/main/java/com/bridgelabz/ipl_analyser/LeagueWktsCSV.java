@@ -18,7 +18,7 @@ public class LeagueWktsCSV {
     @CsvBindByName(column = "BBI")
     public String bbi;
     @CsvBindByName(column = "Avg")
-    public String averageScore;
+    public String  averageScore;
     @CsvBindByName(column = "Econ")
     public String economy;
     @CsvBindByName(column = "SR")
@@ -27,4 +27,22 @@ public class LeagueWktsCSV {
     public String foursWkts;
     @CsvBindByName(column = "5w")
     public String fiveWkts;
+
+    @Override
+    public String toString() {
+        return "LeagueWktsCSV{" +
+                "name='" + name + '\'' +
+                ", noOfMatches=" + noOfMatches +
+                ", noOfInnings=" + noOfInnings +
+                ", noOfOvers='" + noOfOvers + '\'' +
+                ", noOfRuns='" + noOfRuns + '\'' +
+                ", noOfWickets='" + noOfWickets + '\'' +
+                ", bbi='" + bbi + '\'' +
+                ", averageScore=" + averageScore +
+                ", economy='" + economy + '\'' +
+                ", strikeRate='" + strikeRate + '\'' +
+                ", foursWkts='" + foursWkts + '\'' +
+                ", fiveWkts='" + fiveWkts + '\'' +
+                '}';
+    }
 }

@@ -3,9 +3,9 @@ package com.bridgelabz.ipl_analyser;
 
 public class LeagueAnalyserException extends Exception {
     public enum ExceptionType {
-        FILE_PROBLEM, NO_DATA, INVALID_PLAYER_TYPE
+        FILE_PROBLEM, NO_DATA,FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM
     }
-    ExceptionType type;
+   public ExceptionType type;
     public LeagueAnalyserException(String message,String name) {
         super(message);
         this.type=ExceptionType.valueOf(name);

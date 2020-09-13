@@ -27,4 +27,22 @@ public class LeagueRunsCSV {
     public int noOfFours;
     @CsvBindByName(column = "6s")
     public int noOfSixs;
+
+    @Override
+    public String toString() {
+        return "LeagueRunsCSV{" +
+                "name='" + name + '\'' +
+                ", noOfMatches=" + noOfMatches +
+                ", noOfInnings=" + noOfInnings +
+                ", noOfRuns=" + noOfRuns +
+                ", highestScore=" + highestScore +
+                ", noOfBallFaced=" + noOfBallFaced +
+                ", averageScore='" + averageScore + '\'' +
+                ", strikeRate='" + strikeRate + '\'' +
+                ", noOfHundreds=" + noOfHundreds +
+                ", noOfFifty=" + noOfFifty +
+                ", noOfFours=" + noOfFours +
+                ", noOfSixs=" + noOfSixs +
+                '}';
+    }
 }
