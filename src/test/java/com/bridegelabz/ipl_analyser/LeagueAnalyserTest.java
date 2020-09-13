@@ -31,13 +31,25 @@ public class LeagueAnalyserTest {
         }
     }
     @Test
-    public void givenFile_SortWithRespectToAverage_ReturnHighestBattingAvg()  {
+    public void givenFile_whenSortWithRespectToAverage_ReturnHighestBattingAvg() {
         try {
             LeagueAnalyser leagueAnalyser = new LeagueAnalyser();
             leagueAnalyser.loadData(LeagueAnalyser.Player.RUNS, RUNS_SHEET);
             String sortedData = leagueAnalyser.sortData("AVG");
             LeagueRunsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueRunsCSV[].class);
             Assert.assertEquals("Ben Cutting", leagueRunsCSVS[0].name);
+        } catch (LeagueAnalyserException e) {
+            Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
+        }
+    }
+    @Test
+    public void givenFile_whenSortWithRespectToStrikeRate_ReturnHighestStrikeRate() {
+        try {
+            LeagueAnalyser leagueAnalyser = new LeagueAnalyser();
+            leagueAnalyser.loadData(LeagueAnalyser.Player.RUNS, RUNS_SHEET);
+            String sortedData = leagueAnalyser.sortData("STRIKE_RATE");
+            LeagueRunsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueRunsCSV[].class);
+            Assert.assertEquals("Kedar Jadhav", leagueRunsCSVS[0].name);
         } catch (LeagueAnalyserException e) {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }

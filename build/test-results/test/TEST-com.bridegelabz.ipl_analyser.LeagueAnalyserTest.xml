@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-09-13T10:19:50" hostname="LAPTOP-CKOAUDG5" time="1.351">
+<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-09-13T10:32:21" hostname="LAPTOP-CKOAUDG5" time="1.48">
   <properties/>
-  <testcase name="givenWktsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.647"/>
-  <testcase name="givenRunsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.25"/>
-  <testcase name="givenFile_SortWithRespectToAverage_ReturnHighestBattingAvg" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.452"/>
+  <testcase name="givenFile_SortWithRespectToStrikeRate_ReturnHighestStrikeRate" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.688"/>
+  <testcase name="givenWktsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.245"/>
+  <testcase name="givenRunsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.281"/>
+  <testcase name="givenFile_SortWithRespectToAverage_ReturnHighestBattingAvg" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.265"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
