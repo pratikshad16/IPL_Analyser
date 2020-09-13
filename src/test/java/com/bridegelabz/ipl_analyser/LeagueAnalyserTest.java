@@ -2,6 +2,7 @@ package com.bridegelabz.ipl_analyser;
 import com.bridgelabz.ipl_analyser.LeagueAnalyser;
 import com.bridgelabz.ipl_analyser.LeagueAnalyserException;
 import com.bridgelabz.ipl_analyser.LeagueRunsCSV;
+import com.bridgelabz.ipl_analyser.LeagueWktsCSV;
 import com.google.gson.Gson;
 import org.junit.Assert;
 import org.junit.Test;
@@ -20,6 +21,7 @@ public class LeagueAnalyserTest {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
     }
+
     @Test
     public void givenWktsFile_whenCheckRecords_shouldReturnCorrectRecords() {
         try {
@@ -30,6 +32,7 @@ public class LeagueAnalyserTest {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
     }
+
     @Test
     public void givenFile_whenSortWithRespectToAverage_ReturnHighestBattingAvg() {
         try {
@@ -42,6 +45,7 @@ public class LeagueAnalyserTest {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
     }
+
     @Test
     public void givenFile_whenSortWithRespectToStrikeRate_ReturnHighestStrikeRate() {
         try {
@@ -54,6 +58,7 @@ public class LeagueAnalyserTest {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
     }
+
     @Test
     public void givenFile_whenSortWithRespectToSixAndFour_ReturnHighestPlayerName() {
         try {
@@ -66,6 +71,7 @@ public class LeagueAnalyserTest {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
     }
+
     @Test
     public void givenFile_whenSortWithRespectToSixFourAndStrikeRate_ReturnHighestPlayerName() {
         try {
@@ -78,6 +84,7 @@ public class LeagueAnalyserTest {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
     }
+
     @Test
     public void givenFile_whenSortWithRespectAverageAndStrikeRate_ReturnHighestPlayerName() {
         try {
@@ -90,6 +97,7 @@ public class LeagueAnalyserTest {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
     }
+
     @Test
     public void givenFile_SortWithRespectAverageAndRuns_ReturnHighestPlayerName() {
         try {
@@ -102,5 +110,17 @@ public class LeagueAnalyserTest {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
     }
-}
 
+    @Test
+    public void givenFile_SortWithRespectBowlingAverage_ReturnHighestPlayerName() {
+        try {
+        LeagueAnalyser leagueAnalyser = new LeagueAnalyser();
+        leagueAnalyser.loadData(LeagueAnalyser.Player.WKTS, WKTS_SHEET);
+        String sortedData = leagueAnalyser.sortData("BOWLING_AVG");
+        LeagueWktsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueWktsCSV[].class);
+        Assert.assertEquals("Prasidh Krishna", leagueRunsCSVS[0].name);
+        } catch (LeagueAnalyserException e) {
+            Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
+        }
+    }
+}

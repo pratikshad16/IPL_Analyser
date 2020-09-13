@@ -9,6 +9,7 @@ public class LeagueDAO {
     public int noOfBallFaced;
     public String averageScore;
     public String strikeRate;
+    public String bowlingAverageScore;
     public int noOfHundreds;
     public int noOfFifty;
     public int noOfFours;
@@ -45,6 +46,7 @@ public class LeagueDAO {
         economy = leagueWktsCSV.economy;
         fiveWkts = leagueWktsCSV.fiveWkts;
         fourWkts = leagueWktsCSV.foursWkts;
+        bowlingAverageScore = leagueWktsCSV.bowlingAverageScore;
     }
 }
 
