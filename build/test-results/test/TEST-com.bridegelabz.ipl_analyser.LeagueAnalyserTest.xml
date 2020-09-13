@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-13T17:39:18" hostname="LAPTOP-CKOAUDG5" time="1.191">
+<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2020-09-13T17:52:42" hostname="LAPTOP-CKOAUDG5" time="6.584">
   <properties/>
-  <testcase name="givenFile_SortWithRespectAverageAndNOCentury_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="1.191"/>
+  <testcase name="givenFile_SortWithRespectToAllRounder_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="1.008"/>
+  <testcase name="givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.389"/>
+  <testcase name="givenFile_whenSortWithRespectToSixFourAndStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.485"/>
+  <testcase name="givenFile_SortWithRespectAverageAndMostSixs_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.402"/>
+  <testcase name="givenFile_SortWithRespectBowlingAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.317"/>
+  <testcase name="givenFile_SortWithRespectAverageAndNOCentury_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.675"/>
+  <testcase name="givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.242"/>
+  <testcase name="givenWktsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.297"/>
+  <testcase name="givenFile_whenSortWithRespectToAverage_ReturnHighestBattingAvg" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.21"/>
+  <testcase name="givenRunsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.205"/>
+  <testcase name="givenFile_SortWithRespectBowlingStrikeRates_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.239"/>
+  <testcase name="givenFile_whenSortWithRespectToSixAndFour_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.204"/>
+  <testcase name="givenFile_SortWithRespectBowlerAndBattingAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.531"/>
+  <testcase name="givenFile_whenSortWithRespectAverageAndStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.364"/>
+  <testcase name="givenFile_whenSortWithRespectToStrikeRate_ReturnHighestStrikeRate" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.226"/>
+  <testcase name="givenFile_SortWithRespectAverageAndRuns_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.37"/>
+  <testcase name="givenFile_SortWithRespectBowlerBestEconomy_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.203"/>
+  <testcase name="givenFile_SortWithRespectBowlerWithMaxWktsAndAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.199"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

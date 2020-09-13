@@ -19,58 +19,58 @@ public class LeagueAnalyser {
         switch (parameter) {
             case "AVG":
                 comparator = Comparator.comparing(ipl -> ipl.averageScore);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "STRIKE_RATE":
                 comparator = Comparator.comparing(ipl -> ipl.strikeRate);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "SIX_FOUR":
                 comparator = Comparator.comparing(ipl -> ipl.noOfSixs + ipl.noOfFours);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "SIX_FOUR_SR":
                 comparator = Comparator.comparing(ipl -> ipl.noOfSixs + ipl.noOfFours + ipl.strikeRate);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "AVG_STRIKE_RATE":
                 comparator = Comparator.comparing(ipl -> ipl.averageScore + ipl.strikeRate);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "RUN_AVG":
                 comparator = Comparator.comparing(ipl -> ipl.averageScore +ipl.noOfRuns);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "BOWLING_AVG":
                 comparator = Comparator.comparing(ipl -> ipl.bowlingAverageScore);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "BOWLING_STRIKE_RATES":
                 comparator = Comparator.comparing(ipl -> ipl.BowlingstrikeRate);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "BOWLING_ECO":
                 comparator = Comparator.comparing(ipl -> ipl.economy);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "BOWLING_SR_4W_5W":
                 comparator = Comparator.comparing(ipl -> ipl.strikeRate+ipl.fourWkts+ipl.fiveWkts);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "BOWLING_SR_AVG":
                 comparator = Comparator.comparing(ipl -> ipl.strikeRate+ipl.bowlingAverageScore);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "BOWLING_WKTS_AVG":
                 comparator = Comparator.comparing(ipl -> ipl.noOfWickets + ipl.bowlingAverageScore);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "SIX_AVG":
                 comparator = Comparator.comparing(ipl -> ipl.averageScore + ipl.noOfHundreds);
-                leagueList = map.values().stream().collect(Collectors.toList());
                 break;
 
         }
+        leagueList = map.values().stream().collect(Collectors.toList());
         this.sort(leagueList,comparator.reversed());
         String sortedJsonData=new Gson().toJson(leagueList);
         return sortedJsonData;
@@ -79,18 +79,19 @@ public class LeagueAnalyser {
         switch (parameter) {
             case "AVG_BATTING_BOWLING":
                 comparator = Comparator.comparing(ipl -> ipl.noOfRuns + ipl.bowlingAverageScore);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "ALL_ROUNDER":
                 comparator = Comparator.comparing(ipl -> ipl.noOfRuns + ipl.noOfWickets);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
             case "AVG":
                 comparator = Comparator.comparing(ipl -> ipl.averageScore);
-                leagueList = map.values().stream().collect(Collectors.toList());
+
                 break;
 
         }
+        leagueList = map.values().stream().collect(Collectors.toList());
         this.sort(leagueList, comparator);
         String sortedJsonData = new Gson().toJson(leagueList);
         return sortedJsonData;
