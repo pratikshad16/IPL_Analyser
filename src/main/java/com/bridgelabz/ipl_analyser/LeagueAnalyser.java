@@ -85,6 +85,10 @@ public class LeagueAnalyser {
                 comparator = Comparator.comparing(ipl -> ipl.noOfRuns + ipl.noOfWickets);
                 leagueList = map.values().stream().collect(Collectors.toList());
                 break;
+            case "AVG":
+                comparator = Comparator.comparing(ipl -> ipl.averageScore);
+                leagueList = map.values().stream().collect(Collectors.toList());
+                break;
 
         }
         this.sort(leagueList, comparator);
