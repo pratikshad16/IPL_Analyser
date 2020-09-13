@@ -61,6 +61,10 @@ public class LeagueAnalyser {
                 comparator = Comparator.comparing(ipl -> ipl.strikeRate+ipl.bowlingAverageScore);
                 leagueList = map.values().stream().collect(Collectors.toList());
                 break;
+            case "BOWLING_WKTS_AVG":
+                comparator = Comparator.comparing(ipl -> ipl.noOfWickets + ipl.bowlingAverageScore);
+                leagueList = map.values().stream().collect(Collectors.toList());
+                break;
 
         }
         this.sort(leagueList,comparator.reversed());

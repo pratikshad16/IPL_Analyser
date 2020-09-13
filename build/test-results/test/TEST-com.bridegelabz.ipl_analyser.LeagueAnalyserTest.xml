@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-13T15:38:42" hostname="LAPTOP-CKOAUDG5" time="0.853">
+<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-13T15:51:49" hostname="LAPTOP-CKOAUDG5" time="0.711">
   <properties/>
-  <testcase name="givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.853"/>
+  <testcase name="givenFile_SortWithRespectBowlerWithMaxWktsAndAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.711"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
