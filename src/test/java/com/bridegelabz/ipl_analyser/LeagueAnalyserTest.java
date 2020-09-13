@@ -208,4 +208,16 @@ public class LeagueAnalyserTest {
         Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
     }
     }
+    @Test
+    public void givenFile_SortWithRespectAverageAndMostSixs_ReturnHighestPlayerName() {
+        try {
+        LeagueAnalyser leagueAnalyser = new LeagueAnalyser();
+        leagueAnalyser.loadData(LeagueAnalyser.Player.RUNS, RUNS_SHEET);
+        String sortedData = leagueAnalyser.sortData("SIX_AVG");
+        LeagueRunsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueRunsCSV[].class);
+        Assert.assertEquals("Ben Cutting", leagueRunsCSVS[0].name);
+        } catch (LeagueAnalyserException e) {
+            Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
+        }
+    }
 }
