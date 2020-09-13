@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">2</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">6.513s</div>
+<div class="counter">6.035s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">88%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,163 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName"></a>
-<h3 class="failures">givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName</h3>
-<span class="code">
-<pre>java.lang.NullPointerException
-	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
-	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.lambda$sort$32(LeagueAnalyser.java:106)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.accept(ForEachOps.java:204)
-	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
-	at java.base/java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:593)
-	at java.base/java.util.stream.IntPipeline$7$1.accept(IntPipeline.java:317)
-	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
-	at java.base/java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:699)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.evaluateSequential(ForEachOps.java:188)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.IntPipeline.forEachOrdered(IntPipeline.java:444)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sort(LeagueAnalyser.java:103)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sortData(LeagueAnalyser.java:74)
-	at com.bridegelabz.ipl_analyser.LeagueAnalyserTest.givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName(LeagueAnalyserTest.java:166)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName"></a>
-<h3 class="failures">givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName</h3>
-<span class="code">
-<pre>java.lang.NullPointerException
-	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
-	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
-	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.lambda$sort$32(LeagueAnalyser.java:106)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.accept(ForEachOps.java:204)
-	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
-	at java.base/java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:593)
-	at java.base/java.util.stream.IntPipeline$7$1.accept(IntPipeline.java:317)
-	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
-	at java.base/java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:699)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.evaluateSequential(ForEachOps.java:188)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.IntPipeline.forEachOrdered(IntPipeline.java:444)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sort(LeagueAnalyser.java:103)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sortData(LeagueAnalyser.java:74)
-	at com.bridegelabz.ipl_analyser.LeagueAnalyserTest.givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName(LeagueAnalyserTest.java:154)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -229,95 +79,102 @@
 </thead>
 <tr>
 <td class="success">givenFile_SortWithRespectAverageAndMostSixs_ReturnHighestPlayerName</td>
-<td class="success">0.526s</td>
+<td class="success">0.354s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectAverageAndNOCentury_ReturnHighestPlayerName</td>
-<td class="success">0.586s</td>
+<td class="success">0.503s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectAverageAndRuns_ReturnHighestPlayerName</td>
-<td class="success">0.277s</td>
+<td class="success">0.225s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectBowlerAndBattingAverage_ReturnHighestPlayerName</td>
-<td class="success">0.605s</td>
+<td class="success">0.536s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectBowlerBestEconomy_ReturnHighestPlayerName</td>
-<td class="success">0.250s</td>
+<td class="success">0.200s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName</td>
-<td class="failures">0.296s</td>
-<td class="failures">failed</td>
+<td class="success">givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName</td>
+<td class="success">0.298s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName</td>
-<td class="failures">0.214s</td>
-<td class="failures">failed</td>
+<td class="success">givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName</td>
+<td class="success">0.224s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectBowlerWithMaxWktsAndAverage_ReturnHighestPlayerName</td>
-<td class="success">0.245s</td>
+<td class="success">0.247s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectBowlingAverage_ReturnHighestPlayerName</td>
-<td class="success">0.344s</td>
+<td class="success">0.264s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectBowlingStrikeRates_ReturnHighestPlayerName</td>
-<td class="success">0.259s</td>
+<td class="success">0.198s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_SortWithRespectToAllRounder_ReturnHighestPlayerName</td>
-<td class="success">1.017s</td>
+<td class="success">1.110s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_whenSortWithRespectAverageAndStrikeRate_ReturnHighestPlayerName</td>
-<td class="success">0.289s</td>
+<td class="success">0.400s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_whenSortWithRespectToAverage_ReturnHighestBattingAvg</td>
-<td class="success">0.250s</td>
+<td class="success">0.243s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_whenSortWithRespectToSixAndFour_ReturnHighestPlayerName</td>
-<td class="success">0.253s</td>
+<td class="success">0.215s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_whenSortWithRespectToSixFourAndStrikeRate_ReturnHighestPlayerName</td>
-<td class="success">0.283s</td>
+<td class="success">0.307s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenFile_whenSortWithRespectToStrikeRate_ReturnHighestStrikeRate</td>
-<td class="success">0.276s</td>
+<td class="success">0.271s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenRunsFile_whenCheckRecords_shouldReturnCorrectRecords</td>
-<td class="success">0.285s</td>
+<td class="success">0.209s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenWktsFile_whenCheckRecords_shouldReturnCorrectRecords</td>
-<td class="success">0.258s</td>
+<td class="success">0.231s</td>
 <td class="success">passed</td>
 </tr>
 </table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>LeagueRunsCSV{name='MS Dhoni', noOfMatches=15, noOfInnings=12, noOfRuns=416, highestScore=84, noOfBallFaced=309, averageScore='83.2', strikeRate='134.62', noOfHundreds=0, noOfFifty=3, noOfFours=22, noOfSixs=23}
+</pre>
+</span>
 </div>
 </div>
 <div id="footer">
@@ -327,7 +184,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at 14-Sep-2020, 12:45:52 am</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at 14-Sep-2020, 2:18:30 am</p>
 </div>
 </div>
 </body>

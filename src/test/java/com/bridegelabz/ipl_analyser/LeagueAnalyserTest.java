@@ -39,7 +39,8 @@ public class LeagueAnalyserTest {
             leagueAnalyser.loadData(LeagueAnalyser.Player.RUNS, RUNS_SHEET);
             String sortedData = leagueAnalyser.sortData("AVG");
             LeagueRunsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueRunsCSV[].class);
-            Assert.assertEquals("Ishant Sharma", leagueRunsCSVS[0].name);
+            Assert.assertEquals("MS Dhoni", leagueRunsCSVS[0].name);
+            System.out.println(leagueRunsCSVS[0]);
         } catch (LeagueAnalyserException e) {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
@@ -52,7 +53,7 @@ public class LeagueAnalyserTest {
             leagueAnalyser.loadData(LeagueAnalyser.Player.RUNS, RUNS_SHEET);
             String sortedData = leagueAnalyser.sortData("STRIKE_RATE");
             LeagueRunsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueRunsCSV[].class);
-            Assert.assertEquals("Umesh Yadav", leagueRunsCSVS[0].name);
+            Assert.assertEquals("Kedar Jadhav", leagueRunsCSVS[0].name);
         } catch (LeagueAnalyserException e) {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
@@ -65,7 +66,7 @@ public class LeagueAnalyserTest {
             leagueAnalyser.loadData(LeagueAnalyser.Player.RUNS, RUNS_SHEET);
             String sortedData = leagueAnalyser.sortData("SIX_FOUR");
             LeagueRunsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueRunsCSV[].class);
-            Assert.assertEquals("Tim Southee", leagueRunsCSVS[0].name);
+            Assert.assertEquals("Andre Russell", leagueRunsCSVS[0].name);
         } catch (LeagueAnalyserException e) {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
@@ -78,7 +79,7 @@ public class LeagueAnalyserTest {
             leagueAnalyser.loadData(LeagueAnalyser.Player.RUNS, RUNS_SHEET);
             String sortedData = leagueAnalyser.sortData("SIX_FOUR_SR");
             LeagueRunsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueRunsCSV[].class);
-            Assert.assertEquals("Tim Southee", leagueRunsCSVS[0].name);
+            Assert.assertEquals("Stuart Binny", leagueRunsCSVS[0].name);
         } catch (LeagueAnalyserException e) {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
@@ -91,7 +92,7 @@ public class LeagueAnalyserTest {
             leagueAnalyser.loadData(LeagueAnalyser.Player.RUNS, RUNS_SHEET);
             String sortedData = leagueAnalyser.sortData("AVG_STRIKE_RATE");
             LeagueRunsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueRunsCSV[].class);
-            Assert.assertEquals("Ishant Sharma", leagueRunsCSVS[0].name);
+            Assert.assertEquals("Shakib Al Hasan", leagueRunsCSVS[0].name);
         } catch (LeagueAnalyserException e) {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
@@ -104,7 +105,7 @@ public class LeagueAnalyserTest {
             leagueAnalyser.loadData(LeagueAnalyser.Player.RUNS, RUNS_SHEET);
             String sortedData = leagueAnalyser.sortData("RUN_AVG");
             LeagueRunsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueRunsCSV[].class);
-            Assert.assertEquals("Ishant Sharma", leagueRunsCSVS[0].name);
+            Assert.assertEquals("David Warner ", leagueRunsCSVS[0].name);
         } catch (LeagueAnalyserException e) {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
@@ -117,7 +118,7 @@ public class LeagueAnalyserTest {
         leagueAnalyser.loadData(LeagueAnalyser.Player.WKTS, WKTS_SHEET);
         String sortedData = leagueAnalyser.sortData("BOWLING_AVG");
         LeagueWktsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueWktsCSV[].class);
-        Assert.assertEquals("Suresh Raina", leagueRunsCSVS[0].name);
+        Assert.assertEquals("Prasidh Krishna", leagueRunsCSVS[0].name);
         } catch (LeagueAnalyserException e) {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
@@ -129,7 +130,7 @@ public class LeagueAnalyserTest {
         leagueAnalyser.loadData(LeagueAnalyser.Player.WKTS, WKTS_SHEET);
         String sortedData = leagueAnalyser.sortData("BOWLING_STRIKE_RATES");
         LeagueWktsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueWktsCSV[].class);
-        Assert.assertEquals("Suresh Raina", leagueRunsCSVS[0].name);
+        Assert.assertEquals("Alzarri Joseph", leagueRunsCSVS[0].name);
         } catch (LeagueAnalyserException e) {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
@@ -141,7 +142,7 @@ public class LeagueAnalyserTest {
             leagueAnalyser.loadData(LeagueAnalyser.Player.WKTS, WKTS_SHEET);
             String sortedData = leagueAnalyser.sortData("BOWLING_ECO");
             LeagueWktsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueWktsCSV[].class);
-            Assert.assertEquals("Shahbaz Nadeem", leagueRunsCSVS[0].name);
+            Assert.assertEquals("Mayank Markande", leagueRunsCSVS[0].name);
         } catch (LeagueAnalyserException e) {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
@@ -177,7 +178,7 @@ public class LeagueAnalyserTest {
         leagueAnalyser.loadData(LeagueAnalyser.Player.WKTS, WKTS_SHEET);
         String sortedData = leagueAnalyser.sortData("BOWLING_WKTS_AVG");
         LeagueWktsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueWktsCSV[].class);
-        Assert.assertEquals("Suresh Raina", leagueRunsCSVS[0].name);
+        Assert.assertEquals("Keemo Paul", leagueRunsCSVS[0].name);
         } catch (LeagueAnalyserException e) {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }
@@ -215,7 +216,7 @@ public class LeagueAnalyserTest {
         leagueAnalyser.loadData(LeagueAnalyser.Player.RUNS, RUNS_SHEET);
         String sortedData = leagueAnalyser.sortData("SIX_AVG");
         LeagueRunsCSV[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueRunsCSV[].class);
-        Assert.assertEquals("Ishant Sharma", leagueRunsCSVS[0].name);
+        Assert.assertEquals("MS Dhoni", leagueRunsCSVS[0].name);
         } catch (LeagueAnalyserException e) {
             Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
         }

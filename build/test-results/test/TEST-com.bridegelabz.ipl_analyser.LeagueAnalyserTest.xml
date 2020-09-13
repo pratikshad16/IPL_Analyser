@@ -1,161 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="18" skipped="0" failures="2" errors="0" timestamp="2020-09-13T19:15:45" hostname="LAPTOP-CKOAUDG5" time="6.53">
+<testsuite name="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2020-09-13T20:48:24" hostname="LAPTOP-CKOAUDG5" time="6.05">
   <properties/>
-  <testcase name="givenFile_SortWithRespectToAllRounder_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="1.017"/>
-  <testcase name="givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.296">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
-	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.lambda$sort$32(LeagueAnalyser.java:106)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.accept(ForEachOps.java:204)
-	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
-	at java.base/java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:593)
-	at java.base/java.util.stream.IntPipeline$7$1.accept(IntPipeline.java:317)
-	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
-	at java.base/java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:699)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.evaluateSequential(ForEachOps.java:188)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.IntPipeline.forEachOrdered(IntPipeline.java:444)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sort(LeagueAnalyser.java:103)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sortData(LeagueAnalyser.java:74)
-	at com.bridegelabz.ipl_analyser.LeagueAnalyserTest.givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName(LeagueAnalyserTest.java:166)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-</failure>
-  </testcase>
-  <testcase name="givenFile_whenSortWithRespectToSixFourAndStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.283"/>
-  <testcase name="givenFile_SortWithRespectAverageAndMostSixs_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.526"/>
-  <testcase name="givenFile_SortWithRespectBowlingAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.344"/>
-  <testcase name="givenFile_SortWithRespectAverageAndNOCentury_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.586"/>
-  <testcase name="givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.214">
-    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at java.base/java.util.Comparator.lambda$comparing$77a9974f$1(Comparator.java:469)
-	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
-	at java.base/java.util.Comparator.lambda$thenComparing$36697e65$1(Comparator.java:216)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.lambda$sort$32(LeagueAnalyser.java:106)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.accept(ForEachOps.java:204)
-	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
-	at java.base/java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:593)
-	at java.base/java.util.stream.IntPipeline$7$1.accept(IntPipeline.java:317)
-	at java.base/java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:104)
-	at java.base/java.util.Spliterator$OfInt.forEachRemaining(Spliterator.java:699)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfInt.evaluateSequential(ForEachOps.java:188)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.IntPipeline.forEachOrdered(IntPipeline.java:444)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sort(LeagueAnalyser.java:103)
-	at com.bridgelabz.ipl_analyser.LeagueAnalyser.sortData(LeagueAnalyser.java:74)
-	at com.bridegelabz.ipl_analyser.LeagueAnalyserTest.givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName(LeagueAnalyserTest.java:154)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-</failure>
-  </testcase>
-  <testcase name="givenWktsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.258"/>
-  <testcase name="givenFile_whenSortWithRespectToAverage_ReturnHighestBattingAvg" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.25"/>
-  <testcase name="givenRunsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.285"/>
-  <testcase name="givenFile_SortWithRespectBowlingStrikeRates_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.259"/>
-  <testcase name="givenFile_whenSortWithRespectToSixAndFour_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.253"/>
-  <testcase name="givenFile_SortWithRespectBowlerAndBattingAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.605"/>
-  <testcase name="givenFile_whenSortWithRespectAverageAndStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.289"/>
-  <testcase name="givenFile_whenSortWithRespectToStrikeRate_ReturnHighestStrikeRate" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.276"/>
-  <testcase name="givenFile_SortWithRespectAverageAndRuns_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.277"/>
-  <testcase name="givenFile_SortWithRespectBowlerBestEconomy_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.25"/>
-  <testcase name="givenFile_SortWithRespectBowlerWithMaxWktsAndAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.245"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenFile_SortWithRespectToAllRounder_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="1.11"/>
+  <testcase name="givenFile_SortWithRespectBowlerStrikeRateAndAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.298"/>
+  <testcase name="givenFile_whenSortWithRespectToSixFourAndStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.307"/>
+  <testcase name="givenFile_SortWithRespectAverageAndMostSixs_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.354"/>
+  <testcase name="givenFile_SortWithRespectBowlingAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.264"/>
+  <testcase name="givenFile_SortWithRespectAverageAndNOCentury_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.503"/>
+  <testcase name="givenFile_SortWithRespectBowlerStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.224"/>
+  <testcase name="givenWktsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.231"/>
+  <testcase name="givenFile_whenSortWithRespectToAverage_ReturnHighestBattingAvg" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.243"/>
+  <testcase name="givenRunsFile_whenCheckRecords_shouldReturnCorrectRecords" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.209"/>
+  <testcase name="givenFile_SortWithRespectBowlingStrikeRates_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.198"/>
+  <testcase name="givenFile_whenSortWithRespectToSixAndFour_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.215"/>
+  <testcase name="givenFile_SortWithRespectBowlerAndBattingAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.536"/>
+  <testcase name="givenFile_whenSortWithRespectAverageAndStrikeRate_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.4"/>
+  <testcase name="givenFile_whenSortWithRespectToStrikeRate_ReturnHighestStrikeRate" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.271"/>
+  <testcase name="givenFile_SortWithRespectAverageAndRuns_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.225"/>
+  <testcase name="givenFile_SortWithRespectBowlerBestEconomy_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.2"/>
+  <testcase name="givenFile_SortWithRespectBowlerWithMaxWktsAndAverage_ReturnHighestPlayerName" classname="com.bridegelabz.ipl_analyser.LeagueAnalyserTest" time="0.247"/>
+  <system-out><![CDATA[LeagueRunsCSV{name='MS Dhoni', noOfMatches=15, noOfInnings=12, noOfRuns=416, highestScore=84, noOfBallFaced=309, averageScore='83.2', strikeRate='134.62', noOfHundreds=0, noOfFifty=3, noOfFours=22, noOfSixs=23}
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

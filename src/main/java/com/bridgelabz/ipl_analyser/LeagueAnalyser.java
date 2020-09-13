@@ -18,55 +18,43 @@ public class LeagueAnalyser {
     public String sortData(String parameter) {
         switch (parameter) {
             case "AVG":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getaverageScore()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.averageScore);
                 break;
             case "STRIKE_RATE":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getStrikeRate()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.strikeRate);
                 break;
             case "SIX_FOUR":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getNoOfRuns())
-                            .thenComparing(l -> l.getNoOfFours()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.noOfSixs + ipl.noOfFours);
                 break;
             case "SIX_FOUR_SR":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getNoOfRuns())
-                        .thenComparing(l -> l.getNoOfFours())
-                        .thenComparing(l -> l.getStrikeRate()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.noOfSixs + ipl.noOfFours + ipl.strikeRate);
                 break;
             case "AVG_STRIKE_RATE":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getaverageScore())
-                        .thenComparing(l -> l.getStrikeRate()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.averageScore + ipl.strikeRate);
                 break;
             case "RUN_AVG":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getaverageScore())
-                        .thenComparing(l -> l.getStrikeRate())
-                        .thenComparing(l -> l.getNoOfRuns()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.averageScore +ipl.noOfRuns);
                 break;
             case "BOWLING_AVG":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getBowlingAverageScore()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.bowlingAverageScore);
                 break;
             case "BOWLING_STRIKE_RATES":
-
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getBowlingaverageScore()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.BowlingstrikeRate);
                 break;
             case "BOWLING_ECO":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getEconomy()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.economy);
                 break;
             case "BOWLING_SR_4W_5W":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getStrikeRate())
-                        .thenComparing(l -> l.getFoursWkts())
-                        .thenComparing(l -> l.getFiveWkts()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.strikeRate + ipl.fourWkts + ipl.fiveWkts);
                 break;
             case "BOWLING_SR_AVG":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getStrikeRate())
-                        .thenComparing(l -> l.getBowlingAverageScore()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.strikeRate+ipl.bowlingAverageScore);
                 break;
             case "BOWLING_WKTS_AVG":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getNoOfRuns())
-                        .thenComparing(l -> l.getBowlingAverageScore()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.noOfWickets + ipl.bowlingAverageScore);
                 break;
             case "SIX_AVG":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getaverageScore())
-                        .thenComparing(l -> l.getNoOfHundreds()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.averageScore + ipl.noOfHundreds);
                 break;
 
         }
@@ -79,16 +67,12 @@ public class LeagueAnalyser {
         switch (parameter) {
             case "AVG_BATTING_BOWLING":
                 comparator = Comparator.comparing(ipl -> ipl.noOfRuns + ipl.bowlingAverageScore);
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getNoOfRuns())
-                        .thenComparing(l -> l.getBowlingAverageScore()).reversed();
                 break;
             case "ALL_ROUNDER":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getNoOfRuns())
-                        .thenComparing(l -> l.getNoOfWickets()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.noOfRuns + ipl.noOfWickets);
                 break;
             case "AVG":
-                comparator = Comparator.comparing((LeagueDAO l) -> l.getBowlingAverageScore())
-                        .thenComparing(l -> l.getaverageScore()).reversed();
+                comparator = Comparator.comparing(ipl -> ipl.averageScore);
                 break;
 
         }
