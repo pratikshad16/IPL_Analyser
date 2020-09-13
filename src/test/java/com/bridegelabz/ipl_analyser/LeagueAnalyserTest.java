@@ -183,23 +183,29 @@ public class LeagueAnalyserTest {
         }
     }
     @Test
-    public void givenFile_SortWithRespectBowlerAndBattingAverage_ReturnHighestPlayerName() throws LeagueAnalyserException {
+    public void givenFile_SortWithRespectBowlerAndBattingAverage_ReturnHighestPlayerName() {
+        try {
         LeagueLoader leagueLoader=new LeagueLoader();
         LeagueAnalyser leagueAnalyser=new LeagueAnalyser();
         Map<String, LeagueDAO> map=leagueLoader.getListData();
         String sortedData = leagueAnalyser.sortedData(map,"AVG_BATTING_BOWLING");
         LeagueDAO[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueDAO[].class);
-        Assert.assertEquals("Mayank Markande", leagueRunsCSVS[leagueRunsCSVS.length-1].name);
-
+        Assert.assertEquals("Mayank Markande", leagueRunsCSVS[0].name);
+        } catch (LeagueAnalyserException e) {
+            Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
+        }
     }
     @Test
-    public void givenFile_SortWithRespectToAllRounder_ReturnHighestPlayerName() throws LeagueAnalyserException {
+    public void givenFile_SortWithRespectToAllRounder_ReturnHighestPlayerName() {
+        try {
         LeagueLoader leagueLoader=new LeagueLoader();
         LeagueAnalyser leagueAnalyser=new LeagueAnalyser();
         Map<String,LeagueDAO> map=leagueLoader.getListData();
         String sortedData = leagueAnalyser.sortedData(map,"ALL_ROUNDER");
         LeagueDAO[] leagueRunsCSVS = new Gson().fromJson(sortedData, LeagueDAO[].class);
-        Assert.assertEquals("Mayank Markande", leagueRunsCSVS[leagueRunsCSVS.length-1].name);
-
+        Assert.assertEquals("Mayank Markande", leagueRunsCSVS[0].name);
+    } catch (LeagueAnalyserException e) {
+        Assert.assertEquals(LeagueAnalyserException.ExceptionType.FILE_TYPE_OR_DELIMITER_OR_HEADER_PROBLEM, e.type);
+    }
     }
 }

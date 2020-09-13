@@ -48,17 +48,16 @@ public class LeagueLoader {
             throw new LeagueAnalyserException(e.getMessage(), e.type.name());
         }
     }
-    public Map<String,LeagueDAO> getListData() throws LeagueAnalyserException {
-        Map<String,LeagueDAO> map1 = loadLeagueData(".\\src\\test\\resources\\IPL2019FactsheetMostRuns.csv", LeagueRunsCSV.class);
-        Map<String,LeagueDAO> map2 = loadLeagueData(".\\src\\test\\resources\\IPL2019FactsheetMostWkts.csv", LeagueWktsCSV.class);
-        Map<String,LeagueDAO> map = new HashMap();
-        for(String name:map1.keySet()){
-            for(String name1:map2.keySet()){
+    public Map<String, LeagueDAO> getListData() throws LeagueAnalyserException {
+        Map<String, LeagueDAO> map1 = loadLeagueData(".\\src\\test\\resources\\IPL2019FactsheetMostRuns.csv", LeagueRunsCSV.class);
+        Map<String, LeagueDAO> map2 = loadLeagueData(".\\src\\test\\resources\\IPL2019FactsheetMostWkts.csv", LeagueWktsCSV.class);
+        Map<String, LeagueDAO> map = new HashMap();
+        for(String name : map1.keySet()){
+            for(String name1 : map2.keySet()){
                 if (new ArrayList<>(map1.values()).equals(new ArrayList<>(map2.values()))) {
-                    map.put("i", new LeagueDAO(map1.get(name),map2.get(name1)));
+                    map.put("i", new LeagueDAO(map1.get(name), map2.get(name1)));
                 }
             }
-
         }
         return map;
     }
