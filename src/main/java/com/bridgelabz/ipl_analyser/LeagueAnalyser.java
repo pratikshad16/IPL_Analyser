@@ -71,6 +71,21 @@ public class LeagueAnalyser {
         String sortedJsonData=new Gson().toJson(leagueList);
         return sortedJsonData;
     }
+    public String sortedData(Map<String,LeagueDAO> map,String parameter){
+        switch (parameter) {
+            case "AVG_BATTING_BOWLING":
+                comparator = Comparator.comparing(ipl -> ipl.noOfRuns + ipl.bowlingAverageScore);
+                leagueList = map.values().stream().collect(Collectors.toList());
+                break;
+            case "ALL_ROUNDER":
+                comparator = Comparator.comparing(ipl -> ipl.noOfRuns + ipl.noOfWickets);
+                leagueList = map.values().stream().collect(Collectors.toList());
+                break;
+        }
+        this.sort(leagueList, comparator);
+        String sortedJsonData = new Gson().toJson(leagueList);
+        return sortedJsonData;
+    }
 
     private void sort(List<LeagueDAO> iplList, Comparator<LeagueDAO> iplComparator) {
         IntStream.range(0, iplList.size() - 1).flatMap(i -> IntStream.range(0, iplList.size() - i - 1))

@@ -50,5 +50,31 @@ public class LeagueDAO {
         bowlingAverageScore = leagueWktsCSV.bowlingAverageScore;
         BowlingstrikeRate = leagueWktsCSV.BowlingstrikeRate;
     }
+    public LeagueDAO(LeagueDAO leagueWktsCSV, LeagueDAO leagueRunsCSV) {
+        name = leagueWktsCSV.name;
+        noOfMatches = leagueWktsCSV.noOfMatches;
+        noOfInnings = leagueWktsCSV.noOfInnings;
+        noOfOvers = leagueWktsCSV.noOfOvers;
+        noOfWickets = leagueWktsCSV.noOfWickets;
+        bbi = leagueWktsCSV.bbi;
+        economy = leagueWktsCSV.economy;
+        fiveWkts = leagueWktsCSV.fiveWkts;
+        fourWkts = leagueWktsCSV.fourWkts;
+        bowlingAverageScore = leagueWktsCSV.bowlingAverageScore;
+        noOfRuns = leagueWktsCSV.noOfRuns;
+        name = leagueRunsCSV.name;
+        noOfMatches = leagueRunsCSV.noOfMatches;
+        noOfInnings = leagueRunsCSV.noOfInnings;
+        noOfRuns = leagueRunsCSV.noOfRuns;
+        highestScore = leagueRunsCSV.highestScore;
+        noOfBallFaced = leagueRunsCSV.noOfBallFaced;
+        averageScore = leagueRunsCSV.averageScore;
+        strikeRate = leagueRunsCSV.strikeRate;
+        noOfHundreds = leagueRunsCSV.noOfHundreds;
+        noOfFifty = leagueRunsCSV.noOfFifty;
+        noOfFours = leagueRunsCSV.noOfFours;
+        noOfSixs = leagueRunsCSV.noOfSixs;
+
+    }
 }
 
